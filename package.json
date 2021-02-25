@@ -1,0 +1,23 @@
+{
+  "name": "interior_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankowskitomasz/interior_design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pankowskitomasz/interior_design/issues"
+  },
+  "homepage": "https://github.com/pankowskitomasz/interior_design#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
