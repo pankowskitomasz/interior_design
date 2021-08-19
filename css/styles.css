@@ -9,6 +9,47 @@ body, html {
 }
 
 /* line 2, ../sass/partials/_modules.scss */
+.bg-about-desc {
+  background-attachment: scroll;
+  background-image: url(../img/about/about_desc.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 5, ../sass/partials/_modules.scss */
+.bg-about-ext {
+  background-attachment: scroll;
+  background-image: url(../img/about/about_ext.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 8, ../sass/partials/_modules.scss */
+.bg-contact {
+  background-attachment: scroll;
+  background-image: url(../img/contact.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 11, ../sass/partials/_modules.scss */
+.bg-home {
+  background-attachment: scroll;
+  background-image: url(../img/home.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 14, ../sass/partials/_modules.scss */
+.bg-services {
+  background-attachment: fixed;
+  background-image: url(../img/services.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 20, ../sass/partials/_modules.scss */
 .comingsoon-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -17,7 +58,7 @@ body, html {
   background-size: cover;
 }
 
-/* line 8, ../sass/partials/_modules.scss */
+/* line 26, ../sass/partials/_modules.scss */
 .error-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -26,7 +67,7 @@ body, html {
   background-size: cover;
 }
 
-/* line 14, ../sass/partials/_modules.scss */
+/* line 32, ../sass/partials/_modules.scss */
 .privacy-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -35,11 +76,23 @@ body, html {
   background-size: cover;
 }
 
-/* line 21, ../sass/partials/_modules.scss */
+/* line 39, ../sass/partials/_modules.scss */
 .hover-underline:hover {
   text-decoration: underline !important;
 }
 
+@media all and (max-width: 767px) {
+  /* line 47, ../sass/partials/_modules.scss */
+  .bg-md-white {
+    background-color: #fff;
+    opacity: 0.9;
+  }
+
+  /* line 53, ../sass/partials/_modules.scss */
+  .border-md-silver {
+    border: 1px solid silver;
+  }
+}
 /* line 2, ../sass/partials/_minh.scss */
 .minh-25vh {
   min-height: 25vh;
@@ -55,4 +108,11 @@ body, html {
 /* line 11, ../sass/partials/_minh.scss */
 .minh-100vh {
   min-height: 100vh;
+}
+/* line 14, ../sass/partials/_minh.scss */
+.minh-footer-adj {
+  min-height: calc( 100vh - 41px );
+  min-height: -o-calc( 100vh - 41px );
+  min-height: -moz-calc( 100vh - 41px );
+  min-height: -webkit-calc( 100vh - 41px );
 }
