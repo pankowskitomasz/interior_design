@@ -1,3 +1,21 @@
+.bg{
+    &-about-desc{
+        @include set-background($bg__about-desc-img,0,"top right","cover","scroll");
+    }
+    &-about-ext{
+        @include set-background($bg__about-ext-img,0,"top left","cover","scroll");
+    }
+    &-contact{
+        @include set-background($bg__contact-img,0,"top center","cover","scroll");
+    }
+    &-home{
+        @include set-background($bg__home-img,0,"top right","cover","scroll");
+    }
+    &-services{
+        @include set-background($bg__services-img,0,"top right","cover","fixed");
+    }
+}
+
 .comingsoon{
     &-s1{
         @include set-background($comingsoon-img,0,"center","cover","fixed");
@@ -20,6 +38,20 @@
     &-underline{
         &:hover{
             text-decoration: underline !important;
+        }
+    }
+}
+
+@media all and (max-width:767px){
+    .bg{
+        &-md-white{
+            background-color: #fff;
+            opacity:0.9;
+        } 
+    }
+    .border{
+        &-md-silver{
+            border: 1px solid silver;
         }
     }
 }
