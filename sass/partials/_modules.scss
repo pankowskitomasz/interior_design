@@ -1,3 +1,8 @@
+.about{
+    &-s2{
+        background-position-x: right!important;
+    }
+}
 .bg{
     &-about-desc{
         @include set-background($bg__about-desc-img,0,"top right","cover","scroll");
@@ -27,6 +32,11 @@
         @include set-background($error-img,0,"center","cover","fixed");
     }
 }
+.index,.services,.about,.contact{
+    &-s1{
+        background-position-x: 40%!important;
+    }
+}
 
 .privacy{
     &-s1{
@@ -40,6 +50,10 @@
             text-decoration: underline !important;
         }
     }
+}
+h1,h2,h3,h4,h5,h6,.nav-link{
+    font-family:"Raleway";
+    letter-spacing: 1px;
 }
 
 @media all and (max-width:767px){

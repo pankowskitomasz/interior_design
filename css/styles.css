@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
 /* line 1, ../sass/partials/_layout.scss */
 * {
   box-sizing: border-box;
@@ -9,6 +13,11 @@ body, html {
 }
 
 /* line 2, ../sass/partials/_modules.scss */
+.about-s2 {
+  background-position-x: right !important;
+}
+
+/* line 7, ../sass/partials/_modules.scss */
 .bg-about-desc {
   background-attachment: scroll;
   background-image: url(../img/about/about_desc.jpg);
@@ -16,7 +25,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 5, ../sass/partials/_modules.scss */
+/* line 10, ../sass/partials/_modules.scss */
 .bg-about-ext {
   background-attachment: scroll;
   background-image: url(../img/about/about_ext.jpg);
@@ -24,7 +33,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 8, ../sass/partials/_modules.scss */
+/* line 13, ../sass/partials/_modules.scss */
 .bg-contact {
   background-attachment: scroll;
   background-image: url(../img/contact.jpg);
@@ -32,7 +41,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 11, ../sass/partials/_modules.scss */
+/* line 16, ../sass/partials/_modules.scss */
 .bg-home {
   background-attachment: scroll;
   background-image: url(../img/home.jpg);
@@ -40,7 +49,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 14, ../sass/partials/_modules.scss */
+/* line 19, ../sass/partials/_modules.scss */
 .bg-services {
   background-attachment: fixed;
   background-image: url(../img/services.jpg);
@@ -49,7 +58,7 @@ body, html {
   background-size: cover;
 }
 
-/* line 20, ../sass/partials/_modules.scss */
+/* line 25, ../sass/partials/_modules.scss */
 .comingsoon-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -58,7 +67,7 @@ body, html {
   background-size: cover;
 }
 
-/* line 26, ../sass/partials/_modules.scss */
+/* line 31, ../sass/partials/_modules.scss */
 .error-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -67,7 +76,12 @@ body, html {
   background-size: cover;
 }
 
-/* line 32, ../sass/partials/_modules.scss */
+/* line 36, ../sass/partials/_modules.scss */
+.index-s1, .services-s1, .about-s1, .contact-s1 {
+  background-position-x: 40% !important;
+}
+
+/* line 42, ../sass/partials/_modules.scss */
 .privacy-s1 {
   background-attachment: fixed;
   background-image: url(../img/error_bg.jpg);
@@ -76,19 +90,25 @@ body, html {
   background-size: cover;
 }
 
-/* line 39, ../sass/partials/_modules.scss */
+/* line 49, ../sass/partials/_modules.scss */
 .hover-underline:hover {
   text-decoration: underline !important;
 }
 
+/* line 54, ../sass/partials/_modules.scss */
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: "Raleway";
+  letter-spacing: 1px;
+}
+
 @media all and (max-width: 767px) {
-  /* line 47, ../sass/partials/_modules.scss */
+  /* line 61, ../sass/partials/_modules.scss */
   .bg-md-white {
     background-color: #fff;
     opacity: 0.9;
   }
 
-  /* line 53, ../sass/partials/_modules.scss */
+  /* line 67, ../sass/partials/_modules.scss */
   .border-md-silver {
     border: 1px solid silver;
   }
